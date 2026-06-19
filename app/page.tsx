@@ -381,7 +381,7 @@ export default function Home() {
       <div className="mx-auto w-full max-w-2xl space-y-8">
         <div className="space-y-3 text-center">
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-            Media Browser
+            Martech Media Browser
           </h1>
           <p className="text-muted-foreground mx-auto max-w-md text-base sm:text-lg">
             Caută și explorează fișierele media după tag-uri, tip sau nume.
