@@ -1,0 +1,257 @@
+{
+  "generated_at": "2026-06-19T09:51:05.476Z",
+  "model": "claude-sonnet-4-6",
+  "files": [
+    {
+      "filename": "IMG_0993.jpeg",
+      "status": "success",
+      "tags": {
+        "subjects": [
+          "man",
+          "welcome sign",
+          "rocky terrain",
+          "road",
+          "state border sign"
+        ],
+        "scene": "A person posing enthusiastically on rocky terrain next to an Arizona state welcome sign at night or dusk, with a clear blue sky visible and a highway road in the background. The image is rotated 90 degrees sideways.",
+        "mood": [
+          "adventurous",
+          "energetic",
+          "playful",
+          "bold"
+        ],
+        "dominant_colors": [
+          "blue",
+          "brown",
+          "white",
+          "red"
+        ],
+        "text_in_image": "ARIZONA THE GRAND CANYON STATE WELCOMES YOU",
+        "has_text": true,
+        "orientation": "portrait",
+        "channel_suitability": [
+          "Instagram",
+          "Facebook",
+          "Pinterest",
+          "Snapchat",
+          "TikTok"
+        ]
+      }
+    },
+    {
+      "filename": "IMG_3297.MOV",
+      "status": "success",
+      "tags": {
+        "subjects": [
+          "sunset",
+          "ocean",
+          "beach",
+          "lounge chairs",
+          "patio umbrellas",
+          "street lamps",
+          "palm trees",
+          "boardwalk",
+          "railing",
+          "waves",
+          "sand",
+          "resort deck",
+          "benches",
+          "trash cans",
+          "teal storage boxes"
+        ],
+        "scene": "A beachfront resort terrace and boardwalk captured during a golden sunset over the ocean. The video transitions from an elevated pool deck lined with lounge chairs and closed umbrellas to a lower boardwalk-level view facing the beach, with calm rolling waves and a nearly empty shoreline. Street lamps flank the scene throughout, and palm trees accent the resort architecture as the sun descends to the horizon.",
+        "mood": [
+          "serene",
+          "aspirational",
+          "romantic",
+          "calm"
+        ],
+        "dominant_colors": [
+          "orange",
+          "gold",
+          "blue",
+          "beige"
+        ],
+        "text_in_image": "none",
+        "has_text": false,
+        "orientation": "landscape",
+        "channel_suitability": [
+          "Instagram",
+          "Instagram_Reels",
+          "Facebook",
+          "Pinterest",
+          "YouTube",
+          "YouTube_Shorts",
+          "website",
+          "paid_ads",
+          "email"
+        ]
+      }
+    },
+    {
+      "filename": "IMG_3537.MOV",
+      "status": "success",
+      "tags": {
+        "subjects": [
+          "BMW car interior",
+          "steering wheel",
+          "dashboard",
+          "speedometer",
+          "side mirror",
+          "Las Vegas Strip",
+          "Caesars Palace",
+          "Bellagio",
+          "hotel towers",
+          "city traffic",
+          "pedestrian overpass",
+          "luxury vehicles"
+        ],
+        "scene": "Driving a BMW along the Las Vegas Strip on a clear sunny day, passing iconic casino resort towers including Caesars Palace and the Bellagio, with light traffic, blue skies, and a vibrant urban luxury atmosphere captured from inside the vehicle",
+        "mood": [
+          "aspirational",
+          "luxurious",
+          "adventurous",
+          "energetic"
+        ],
+        "dominant_colors": [
+          "blue",
+          "white",
+          "beige",
+          "gray"
+        ],
+        "text_in_image": "CAESARS PALACE BMW",
+        "has_text": true,
+        "orientation": "portrait",
+        "channel_suitability": [
+          "Instagram",
+          "Instagram_Reels",
+          "TikTok",
+          "YouTube_Shorts",
+          "Snapchat",
+          "paid_ads"
+        ]
+      }
+    },
+    {
+      "filename": "IMG_3571.jpeg",
+      "status": "success",
+      "tags": {
+        "subjects": [
+          "Las Vegas Strip",
+          "palm trees",
+          "casinos",
+          "hotels",
+          "boulevard",
+          "Eiffel Tower replica",
+          "signage",
+          "road",
+          "skyscrapers"
+        ],
+        "scene": "Elevated daytime view looking down the Las Vegas Strip boulevard lined with tall palm trees, flanked by major casino resort hotels under a bright clear blue sky",
+        "mood": [
+          "luxurious",
+          "energetic",
+          "aspirational",
+          "bold"
+        ],
+        "dominant_colors": [
+          "blue",
+          "green",
+          "gray",
+          "white"
+        ],
+        "text_in_image": "planet hollywood, Bellagio, hollywood, OVER $2.3 BILLION",
+        "has_text": true,
+        "orientation": "landscape",
+        "channel_suitability": [
+          "Instagram",
+          "Pinterest",
+          "Facebook",
+          "website",
+          "paid_ads",
+          "YouTube",
+          "OOH"
+        ]
+      }
+    },
+    {
+      "filename": "IMG_4100.jpeg",
+      "status": "success",
+      "tags": {
+        "subjects": [
+          "sandstone cliffs",
+          "canyon wall",
+          "hiking trail",
+          "evergreen trees",
+          "rock formations",
+          "hikers",
+          "weeping rock",
+          "water seepage"
+        ],
+        "scene": "A dramatic canyon landscape shot from beneath a massive overhanging sandstone cliff, with a wet weeping rock wall on one side, lush green trees, and towering red rock formations visible in the background. Small human figures are visible along a narrow trail, emphasizing the grand scale of the natural environment.",
+        "mood": [
+          "adventurous",
+          "dramatic",
+          "serene",
+          "aspirational"
+        ],
+        "dominant_colors": [
+          "brown",
+          "orange",
+          "green",
+          "gray"
+        ],
+        "text_in_image": "none",
+        "has_text": false,
+        "orientation": "portrait",
+        "channel_suitability": [
+          "Instagram",
+          "Pinterest",
+          "Facebook",
+          "website",
+          "YouTube",
+          "paid_ads"
+        ]
+      }
+    },
+    {
+      "filename": "IMG_4573.jpeg",
+      "status": "success",
+      "tags": {
+        "subjects": [
+          "Hollywood Sign",
+          "hillside",
+          "communication tower",
+          "dry brush vegetation",
+          "residential building",
+          "bare trees"
+        ],
+        "scene": "Iconic Hollywood Sign mounted on a sun-drenched hillside in Los Angeles at golden hour, with arid chaparral landscape, a communications tower, and sparse vegetation bathed in warm amber light under a clear blue sky",
+        "mood": [
+          "aspirational",
+          "nostalgic",
+          "bold",
+          "adventurous"
+        ],
+        "dominant_colors": [
+          "orange",
+          "brown",
+          "blue",
+          "white"
+        ],
+        "text_in_image": "HOLLYWOOD",
+        "has_text": true,
+        "orientation": "landscape",
+        "channel_suitability": [
+          "Instagram",
+          "Pinterest",
+          "Facebook",
+          "paid_ads",
+          "website",
+          "OOH",
+          "YouTube"
+        ]
+      }
+    }
+  ]
+}
