@@ -49,9 +49,9 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
+  --background: #ffffff;
   --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
+  --card: #ffffff;
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
@@ -122,9 +122,63 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    position: relative;
+    background-color: #ffffff;
   }
   html {
     @apply font-sans;
+    background-color: #ffffff;
   }
+}
+
+/* Subtle gradient blobs — fixed, full-viewport background */
+.blob-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background-color: #ffffff;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.blob-1 {
+  top: -10%;
+  left: -8%;
+  width: clamp(280px, 42vw, 600px);
+  height: clamp(280px, 42vw, 600px);
+  background-color: rgb(99 102 241 / 0.22);
+  filter: blur(120px);
+}
+
+.blob-2 {
+  right: -6%;
+  bottom: -8%;
+  width: clamp(200px, 28vw, 400px);
+  height: clamp(200px, 28vw, 400px);
+  background-color: rgb(6 182 212 / 0.2);
+  filter: blur(100px);
+}
+
+.blob-3 {
+  top: 42%;
+  right: clamp(4%, 12vw, 18%);
+  width: clamp(160px, 22vw, 300px);
+  height: clamp(160px, 22vw, 300px);
+  background-color: rgb(168 85 247 / 0.18);
+  filter: blur(80px);
+}
+
+.app-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 100%;
+  flex: 1;
+  flex-direction: column;
 }

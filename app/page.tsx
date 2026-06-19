@@ -390,12 +390,12 @@ export default function Home() {
 
         <form
           onSubmit={handleSearch}
-          className="flex w-full flex-col gap-3 sm:flex-row sm:items-stretch"
+          className="flex w-full flex-col gap-2 rounded-xl border-[1.5px] border-[#d1d5db] bg-[#ffffff] p-1.5 shadow-[0_2px_8px_rgba(0,0,0,0.08)] sm:flex-row sm:items-stretch"
         >
           <Input
             type="search"
             placeholder="Caută în limbaj natural..."
-            className="h-11 flex-1 text-base"
+            className="h-11 flex-1 border-0 bg-[#ffffff] text-base shadow-none focus-visible:border-transparent focus-visible:ring-0"
             aria-label="Căutare media"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
@@ -404,7 +404,7 @@ export default function Home() {
           <Button
             type="submit"
             size="lg"
-            className="h-11 shrink-0 px-8 sm:w-auto"
+            className="h-11 shrink-0 bg-[#1a1a1a] px-8 text-white hover:bg-[#1a1a1a] sm:w-auto"
             disabled={pageState === "loading" || !query.trim()}
           >
             {pageState === "loading" ? (
@@ -422,10 +422,7 @@ export default function Home() {
       <div className="mx-auto mt-10 w-full space-y-8">
         {pageState === "idle" && (
           <p className="text-muted-foreground text-center text-sm sm:text-base">
-            Caută în limbaj natural:{" "}
-            <span className="text-foreground font-medium">
-              &ldquo;energetic outdoor shots, no text&rdquo;
-            </span>
+            Gaseste momentul tau favorit
           </p>
         )}
 
