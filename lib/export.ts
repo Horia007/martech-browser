@@ -2,9 +2,9 @@ import JSZip from "jszip";
 
 import type { ScoredTaggedFile } from "@/lib/search";
 
-export type MediaTypeLabel = "image" | "video" | "unknown";
+type MediaTypeLabel = "image" | "video" | "unknown";
 
-export function getMediaTypeLabel(filename: string): MediaTypeLabel {
+function getMediaTypeLabel(filename: string): MediaTypeLabel {
   if (/\.(mov|mp4|webm)$/i.test(filename)) {
     return "video";
   }
@@ -25,7 +25,7 @@ function escapeCsvValue(value: string): string {
   return value;
 }
 
-export function buildCsv(files: ScoredTaggedFile[]): string {
+function buildCsv(files: ScoredTaggedFile[]): string {
   const headers = [
     "filename",
     "type",
@@ -66,7 +66,7 @@ export function downloadCsvExport(files: ScoredTaggedFile[]): void {
   downloadBlob(blob, `media-export-${Date.now()}.csv`);
 }
 
-export interface ZipExportResult {
+interface ZipExportResult {
   added: number;
   skipped: number;
 }
