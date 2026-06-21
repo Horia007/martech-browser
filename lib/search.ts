@@ -1,7 +1,7 @@
 import { readFileSync } from "fs";
 import path from "path";
 
-export const ALLOWED_MOODS = [
+const ALLOWED_MOODS = [
   "energetic",
   "calm",
   "aspirational",
@@ -17,7 +17,7 @@ export const ALLOWED_MOODS = [
   "serene",
 ] as const;
 
-export const ALLOWED_COLORS = [
+const ALLOWED_COLORS = [
   "red",
   "orange",
   "yellow",
@@ -34,9 +34,9 @@ export const ALLOWED_COLORS = [
   "silver",
 ] as const;
 
-export const ALLOWED_ORIENTATIONS = ["landscape", "portrait", "square"] as const;
+const ALLOWED_ORIENTATIONS = ["landscape", "portrait", "square"] as const;
 
-export const ALLOWED_CHANNELS = [
+const ALLOWED_CHANNELS = [
   "Instagram",
   "Instagram_Reels",
   "TikTok",
@@ -52,12 +52,12 @@ export const ALLOWED_CHANNELS = [
   "website",
 ] as const;
 
-export type Mood = (typeof ALLOWED_MOODS)[number];
-export type DominantColor = (typeof ALLOWED_COLORS)[number];
-export type Orientation = (typeof ALLOWED_ORIENTATIONS)[number];
-export type Channel = (typeof ALLOWED_CHANNELS)[number];
+type Mood = (typeof ALLOWED_MOODS)[number];
+type DominantColor = (typeof ALLOWED_COLORS)[number];
+type Orientation = (typeof ALLOWED_ORIENTATIONS)[number];
+type Channel = (typeof ALLOWED_CHANNELS)[number];
 
-export type MediaType = "video" | "image";
+type MediaType = "video" | "image";
 
 export interface SearchFilters {
   mood: Mood[];
@@ -69,7 +69,7 @@ export interface SearchFilters {
   keywords: string[];
 }
 
-export interface FileTags {
+interface FileTags {
   subjects: string[];
   scene: string;
   mood: string[];
@@ -80,7 +80,7 @@ export interface FileTags {
   channel_suitability: string[];
 }
 
-export interface TaggedFile {
+interface TaggedFile {
   filename: string;
   status: string;
   tags: FileTags;
@@ -90,7 +90,7 @@ export interface ScoredTaggedFile extends TaggedFile {
   score: number;
 }
 
-export interface TagsData {
+interface TagsData {
   generated_at?: string;
   model?: string;
   files: TaggedFile[];
@@ -102,27 +102,13 @@ export interface SearchResult {
   total: number;
 }
 
-const EMPTY_FILTERS: SearchFilters = {
-  mood: [],
-  dominant_colors: [],
-  orientation: [],
-  channels: [],
-  has_text: null,
-  media_type: null,
-  keywords: [],
-};
-
-export function getEmptyFilters(): SearchFilters {
-  return { ...EMPTY_FILTERS, keywords: [] };
-}
-
-export function loadTagsData(): TagsData {
+function loadTagsData(): TagsData {
   const filePath = path.join(process.cwd(), "data", "tags.json");
   const raw = readFileSync(filePath, "utf-8");
   return JSON.parse(raw) as TagsData;
 }
 
-export function stripMarkdownJson(raw: string): string {
+function stripMarkdownJson(raw: string): string {
   const trimmed = raw.trim();
   const fenced = trimmed.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/i);
   if (fenced) {
@@ -198,7 +184,7 @@ const SCORE_MOOD = 2;
 const SCORE_COLOR = 1;
 const SCORE_CHANNEL = 1;
 
-export function getFileMediaType(filename: string): MediaType | null {
+function getFileMediaType(filename: string): MediaType | null {
   if (/\.(mov|mp4|webm)$/i.test(filename)) {
     return "video";
   }
@@ -358,7 +344,7 @@ function passesSoftRelevanceGate(
   return true;
 }
 
-export function filterFiles(
+function filterFiles(
   data: TagsData,
   filters: SearchFilters
 ): ScoredTaggedFile[] {
